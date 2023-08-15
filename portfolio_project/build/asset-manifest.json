@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.00632150.css",
+    "main.js": "/static/js/main.d63286a6.js",
+    "static/js/787.071eb048.chunk.js": "/static/js/787.071eb048.chunk.js",
+    "static/media/kodacropped.jpg": "/static/media/kodacropped.a8b062084c0b72ff043a.jpg",
+    "index.html": "/index.html",
+    "main.00632150.css.map": "/static/css/main.00632150.css.map",
+    "main.d63286a6.js.map": "/static/js/main.d63286a6.js.map",
+    "787.071eb048.chunk.js.map": "/static/js/787.071eb048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00632150.css",
+    "static/js/main.d63286a6.js"
+  ]
+}
