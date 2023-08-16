@@ -30,8 +30,6 @@ const Bio = () => {
     <h3>Tools</h3>
     <p>Visual Studio Code, Git, Github, npm, Postman</p>
     
-    <h3>Cloud Services</h3>
-    <p>Google Firestore, Heroku</p>
   </div>  
   </div>           
   <div className="section" id="education">

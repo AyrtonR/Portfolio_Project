@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio_Project/static/css/main.00632150.css",
-    "main.js": "/Portfolio_Project/static/js/main.25640cfe.js",
+    "main.js": "/Portfolio_Project/static/js/main.45661541.js",
     "static/js/787.071eb048.chunk.js": "/Portfolio_Project/static/js/787.071eb048.chunk.js",
     "static/media/kodaoriginal.JPG": "/Portfolio_Project/static/media/kodaoriginal.1c24d1619fa969de2a81.JPG",
     "index.html": "/Portfolio_Project/index.html",
     "main.00632150.css.map": "/Portfolio_Project/static/css/main.00632150.css.map",
-    "main.25640cfe.js.map": "/Portfolio_Project/static/js/main.25640cfe.js.map",
+    "main.45661541.js.map": "/Portfolio_Project/static/js/main.45661541.js.map",
     "787.071eb048.chunk.js.map": "/Portfolio_Project/static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00632150.css",
-    "static/js/main.25640cfe.js"
+    "static/js/main.45661541.js"
   ]
 }
