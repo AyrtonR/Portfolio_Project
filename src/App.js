@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
-import Sidebar from './components/Sidebar';
-import Bio from './components/Bio';
 
-const App = () => {
+function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="App">
-      <Sidebar />
-      <Bio />
+    <div className={`${darkMode ? 'dark' : ''}`}>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <main className="container mx-auto px-4">
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
     </div>
   );
-};
+}
 
 export default App;
