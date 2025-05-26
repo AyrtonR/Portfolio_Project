@@ -5,33 +5,44 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
-      title: 'Spotify Clone',
-      description: 'A modern Spotify clone built with React, featuring music playback, playlist management, and a responsive design that mimics the original Spotify interface.',
-      technologies: ['React', 'JavaScript', 'CSS', 'Spotify API'],
-      github: 'https://github.com/AyrtonR/Project-Spotify-2024',
-      image: 'spotify.jpg'
-    },
+        title: 'Basic E-commerce Shop ',
+        description: 'This project includes an e-commerce part with basic functions like adding to the cart, built with HTML, CSS, and JavaScript, and is deployed via GitHub Pages.',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        github: ' https://github.com/AyrtonR/Graded-exercise-1',
+        live: ' https://ayrtonr.github.io/Graded-exercise-1/E-commerce.html',
+      },
+      {
+        title: 'Backend Project Team 38 ',
+        description: 'This project focused on backend development using JavaScript.',
+        technologies: ['Postman', 'JavaScript'],
+        github: 'https://github.com/AWA-Team-38/r38',
+        live: 'https://www.youtube.com/watch?v=wDLDFD9d67g',
+      },
+      {
+        title: 'E-commerce Computer Parts Store G19',
+        description: 'This project involved backend development with C# and database work with SQLite',
+        technologies: ['C#', 'SQLite', '.NET'],
+        github: 'https://github.com/PDIG19/G19',
+        live: 'https://youtu.be/coDswu2fXf8?si=nDpZqsXSj56nLnoB',
+      },
     {
-      title: 'Restaurant Shop',
-      description: 'A full-featured restaurant website with menu management, shopping cart functionality, and user authentication. Includes both frontend and backend implementation.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-      github: 'https://github.com/AyrtonR/Project-Resturant-Shop',
-      image: 'restaurant.jpg'
-    },
+        title: 'Spotify Recommendator',
+        description: 'A Spotify Recommendation System built with React, featuring music playback, playlist management, and a responsive design that mimics the original Spotify interface.',
+        technologies: ['React', 'JavaScript', 'CSS', 'Spotify API'],
+        github: 'https://github.com/AyrtonR/Project-Spotify-2024',
+      },
     {
       title: 'Bachelor\'s Thesis',
       description: 'This thesis explores the development of a headless e-commerce web application, focusing on the use of Shopify Hydrogen, a modern framework for building customizable, scalable online stores.',
       technologies: ['Research', 'Frontend Frameworks', 'Shopify Hydrogen'],
       live: 'https://www.theseus.fi/handle/10024/874538',
-      image: 'thesis.jpg'
     },
     {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring dark mode and smooth animations.',
-      technologies: ['React'],
+      technologies: ['React', 'Tailwind CSS'],
       github: 'https://github.com/AyrtonR/Portfolio_Project',
-      live: '#',
-      image: 'portfolio.jpg'
+      live: 'https://ayrtonr.github.io/Portfolio_Project/',
     }
   ];
 
