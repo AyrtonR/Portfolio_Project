@@ -25,7 +25,7 @@ const About = () => {
             <p className="text-gray-600 dark:text-gray-300">
                 Outside of coding, I’m a pretty easy-going person who gets along well with all kinds of people. 
                 I like to unwind by playing video games, watching football or motorsports, and spending time with animals. 
-                My girlfriend and I share our home with two cats who definitely keep things interesting. 
+                My girlfriend and I have two cats who definitely keep things interesting. 
                 I believe that staying curious and having fun outside of work helps keep me sharp and creative in what I do.
             </p>
           </div>

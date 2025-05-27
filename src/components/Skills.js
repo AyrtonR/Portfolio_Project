@@ -14,9 +14,6 @@ const Skills = () => {
     { name: 'ReactJS', icon: <FaReact className="text-blue-500" /> },
     { name: 'Git', icon: <FaGitAlt className="text-orange-600" /> },
     { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
-    { name: 'Docker', icon: <DiDocker className="text-blue-600" /> },
-    { name: 'Bitbucket', icon: <DiBitbucket className="text-blue-800" /> },
-    { name: 'SQL', icon: <FaDatabase className="text-blue-700" /> },
   ];
 
   return (
