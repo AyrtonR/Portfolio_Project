@@ -1,8 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { useLanguage } from '../contexts/LanguageContext';
+import enTranslations from '../languages/en.json';
+import esTranslations from '../languages/es.json';
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : esTranslations;
 
   const socialLinks = [
     {
@@ -32,13 +37,13 @@ const Contact = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="section-title text-center">Contact Me</h2>
+          <h2 className="section-title text-center">{translations.contact.title}</h2>
           <div className="bg-white dark:bg-gray-700 rounded-lg p-8 shadow-lg text-center">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
-              Get in Touch
+              {translations.contact.subtitle}
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Feel free to reach out to me through my social media or email.
+              {translations.contact.description}
             </p>
             <div className="flex justify-center space-x-6">
               {socialLinks.map((link) => (

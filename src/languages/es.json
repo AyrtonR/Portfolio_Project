@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Ayrton Ramirez",
+    "subtitle": "Programador",
+    "description": "Programador full-stack.",
+    "downloadCV": "Descargar CV"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Recien graduado de la Universidad de Oulu de Ciencias Aplicadas, donde termine mi carrera de Ingenieria Informatica. Mi carrera academica me ha equipado con una base fuerte en desarrollo de front-end y back-end.",
+    "paragraph2": "Disfruto construir aplicaciones que no solo son funcionales, sino que también son agradables de usar. Estoy especialmente interesado en el desarrollo full-stack y amo el proceso de transformar ideas en realidad.",
+    "paragraph3": "Fuera del código, soy una persona bastante tranquila que se lleva bien con todas las personas. Me gusta desahogarme jugando videojuegos, viendo fútbol o carreras. Mi novia y yo tenemos dos gatos que definitivamente hacen las cosas interesantes. Creo que quedarse curioso y divertirse fuera del trabajo me ayuda a mantenerme alerta y creativo en lo que hago."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "items": [
+      "Javascript",
+      "Java",
+      "C#",
+      "HTML & CSS",
+      ".NET",
+      "ReactJS",
+      "Git",
+      "Node.js"
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código",
+    "items": [
+      {
+        "title": "Tienda E-commerce Básica",
+        "description": "Este proyecto incluye una parte de comercio electrónico con funciones básicas como agregar al carrito, hecho con HTML, CSS y JavaScript, y desplegado a través de GitHub Pages.",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Proyecto Backend Equipo 38",
+        "description": "Este proyecto se centró en el desarrollo del backend utilizando JavaScript.",
+        "technologies": ["Postman", "JavaScript"]
+      },
+      {
+        "title": "Tienda de Partes de Computadora G19",
+        "description": "Este proyecto involucró desarrollo del backend con C# y con la base de datos SQLite.",
+        "technologies": ["C#", "SQLite", ".NET"]
+      },
+      {
+        "title": "Recomendador de Spotify",
+        "description": "Un Sistema de Recomendación de Spotify construido con React, con reproducción de música, gestión de playlists y un diseño  que imita la interfaz original de Spotify.",
+        "technologies": ["React", "JavaScript", "CSS", "API de Spotify"]
+      },
+      {
+        "title": "Tesis de Licenciatura",
+        "description": "Esta tesis explora el desarrollo de una aplicación web de comercio electrónico headless, centrándose en el uso de Shopify Hydrogen, un framework moderno para construir tiendas online personalizables y escalables.",
+        "technologies": ["Investigación", "Frameworks Frontend", "Shopify Hydrogen"]
+      },
+      {
+        "title": "Sitio Web de Portafolio",
+        "description": "Un sitio web de portafolio  construido con React y Tailwind CSS, con modo oscuro, traducido a español/inglés y con algunas animaciones.",
+        "technologies": ["React", "Tailwind CSS"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Ponte en Contacto",
+    "description": "Puedes contactarme a través de mis redes sociales o correo electrónico."
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+} 

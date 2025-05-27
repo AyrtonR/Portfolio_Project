@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Ayrton Ramirez",
+    "subtitle": "Programmer",
+    "description": "Full-stack programmer.",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Recently graduated from Oulu University of Applied Sciences, where I completed my degree in Computer Engineering. My academic career has equipped me with a strong foundation in both front-end and back-end development.",
+    "paragraph2": "I enjoy building applications that are not only functional but also pleasant to use. I am particularly interested in full-stack development and love the process of turning ideas into reality.",
+    "paragraph3": "Outside of coding, I'm a pretty laid-back person who gets along with everyone. I like to unwind by playing video games, watching football or racing. My girlfriend and I have two cats that definitely make things interesting. I believe staying curious and having fun outside of work helps me stay sharp and creative in what I do."
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      "Javascript",
+      "Java",
+      "C#",
+      "HTML & CSS",
+      ".NET",
+      "ReactJS",
+      "Git",
+      "Node.js"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "items": [
+      {
+        "title": "Basic E-commerce Shop",
+        "description": "This project includes an e-commerce part with basic functions like adding to the cart, built with HTML, CSS, and JavaScript, and is deployed via GitHub Pages.",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Backend Project Team 38",
+        "description": "This project focused on backend development using JavaScript.",
+        "technologies": ["Postman", "JavaScript"]
+      },
+      {
+        "title": "E-commerce Computer Parts Store G19",
+        "description": "This project involved backend development with C# and database work with SQLite",
+        "technologies": ["C#", "SQLite", ".NET"]
+      },
+      {
+        "title": "Spotify Recommendator",
+        "description": "A Spotify Recommendation System built with React, featuring music playback, playlist management, and a responsive design that mimics the original Spotify interface.",
+        "technologies": ["React", "JavaScript", "CSS", "Spotify API"]
+      },
+      {
+        "title": "Bachelor's Thesis",
+        "description": "This thesis explores the development of a headless e-commerce web application, focusing on the use of Shopify Hydrogen, a modern framework for building customizable, scalable online stores.",
+        "technologies": ["Research", "Frontend Frameworks", "Shopify Hydrogen"]
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A modern, responsive portfolio website built with React and Tailwind CSS, featuring dark mode, translations to English/Spanish, and smooth animations.",
+        "technologies": ["React", "Tailwind CSS"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in Touch",
+    "description": "Feel free to reach out to me through my social media or email."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+} 

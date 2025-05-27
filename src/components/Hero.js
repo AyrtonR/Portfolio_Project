@@ -2,8 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 import profilePicture from '../cropped2.jpg';
+import { useLanguage } from '../contexts/LanguageContext';
+import enTranslations from '../languages/en.json';
+import esTranslations from '../languages/es.json';
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : esTranslations;
+
   const socialLinks = [
     {
       icon: <FaGithub />,
@@ -33,13 +39,13 @@ const Hero = () => {
             className="flex-1 text-center md:text-left"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
-              Ayrton Ramirez
+              {translations.hero.title}
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
-              Software Developer
+              {translations.hero.subtitle}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
-              Full-stack developer passionate about creating code.
+              {translations.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
               <motion.a
@@ -52,7 +58,7 @@ const Hero = () => {
                 className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors"
               >
                 <FaFileDownload />
-                <span>Download CV</span>
+                <span>{translations.hero.downloadCV}</span>
               </motion.a>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (

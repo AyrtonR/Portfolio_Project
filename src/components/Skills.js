@@ -1,10 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaDatabase } from 'react-icons/fa';
-import { DiJava, DiDotnet, DiDocker, DiBitbucket } from "react-icons/di";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from 'react-icons/fa';
+import { DiJava, DiDotnet } from "react-icons/di";
 import { TbBrandCSharp } from "react-icons/tb";
+import { useLanguage } from '../contexts/LanguageContext';
+import enTranslations from '../languages/en.json';
+import esTranslations from '../languages/es.json';
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : esTranslations;
+
   const skills = [
     { name: 'Javascript', icon: <FaJs className="text-yellow-400" /> },
     { name: 'Java', icon: <DiJava className="text-red-600" /> },
@@ -25,7 +31,7 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title text-center">Skills</h2>
+          <h2 className="section-title text-center">{translations.skills.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
               <motion.div

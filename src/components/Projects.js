@@ -1,46 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { useLanguage } from '../contexts/LanguageContext';
+import enTranslations from '../languages/en.json';
+import esTranslations from '../languages/es.json';
 
 const Projects = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : esTranslations;
+
   const projects = [
     {
-        title: 'Basic E-commerce Shop ',
-        description: 'This project includes an e-commerce part with basic functions like adding to the cart, built with HTML, CSS, and JavaScript, and is deployed via GitHub Pages.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
+        title: translations.projects.items[0].title,
+        description: translations.projects.items[0].description,
+        technologies: translations.projects.items[0].technologies,
         github: ' https://github.com/AyrtonR/Graded-exercise-1',
         live: ' https://ayrtonr.github.io/Graded-exercise-1/E-commerce.html',
       },
       {
-        title: 'Backend Project Team 38 ',
-        description: 'This project focused on backend development using JavaScript.',
-        technologies: ['Postman', 'JavaScript'],
+        title: translations.projects.items[1].title,
+        description: translations.projects.items[1].description,
+        technologies: translations.projects.items[1].technologies,
         github: 'https://github.com/AWA-Team-38/r38',
         live: 'https://www.youtube.com/watch?v=wDLDFD9d67g',
       },
       {
-        title: 'E-commerce Computer Parts Store G19',
-        description: 'This project involved backend development with C# and database work with SQLite',
-        technologies: ['C#', 'SQLite', '.NET'],
+        title: translations.projects.items[2].title,
+        description: translations.projects.items[2].description,
+        technologies: translations.projects.items[2].technologies,
         github: 'https://github.com/PDIG19/G19',
         live: 'https://youtu.be/coDswu2fXf8?si=nDpZqsXSj56nLnoB',
       },
     {
-        title: 'Spotify Recommendator',
-        description: 'A Spotify Recommendation System built with React, featuring music playback, playlist management, and a responsive design that mimics the original Spotify interface.',
-        technologies: ['React', 'JavaScript', 'CSS', 'Spotify API'],
+        title: translations.projects.items[3].title,
+        description: translations.projects.items[3].description,
+        technologies: translations.projects.items[3].technologies,
         github: 'https://github.com/AyrtonR/Project-Spotify-2024',
       },
     {
-      title: 'Bachelor\'s Thesis',
-      description: 'This thesis explores the development of a headless e-commerce web application, focusing on the use of Shopify Hydrogen, a modern framework for building customizable, scalable online stores.',
-      technologies: ['Research', 'Frontend Frameworks', 'Shopify Hydrogen'],
+      title: translations.projects.items[4].title,
+      description: translations.projects.items[4].description,
+      technologies: translations.projects.items[4].technologies,
       live: 'https://www.theseus.fi/handle/10024/874538',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring dark mode and smooth animations.',
-      technologies: ['React', 'Tailwind CSS'],
+      title: translations.projects.items[5].title,
+      description: translations.projects.items[5].description,
+      technologies: translations.projects.items[5].technologies,
       github: 'https://github.com/AyrtonR/Portfolio_Project',
       live: 'https://ayrtonr.github.io/Portfolio_Project/',
     }
@@ -55,7 +61,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title text-center">Projects</h2>
+          <h2 className="section-title text-center">{translations.projects.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project, index) => (
               <motion.div
@@ -85,22 +91,24 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
-                      title="View on GitHub"
-                    >
-                      <FaGithub className="text-2xl" />
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                        title={translations.projects.viewCode}
+                      >
+                        <FaGithub className="text-2xl" />
+                      </a>
+                    )}
                     {project.live && (
                       <a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
-                        title="View Live"
+                        title={translations.projects.viewProject}
                       >
                         <FaExternalLinkAlt className="text-2xl" />
                       </a>

@@ -1,7 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import enTranslations from '../languages/en.json';
+import esTranslations from '../languages/es.json';
 
 const About = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : esTranslations;
+
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4">
@@ -12,21 +18,16 @@ const About = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="section-title text-center">About Me</h2>
+          <h2 className="section-title text-center">{translations.about.title}</h2>
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-                I am a recent graduate from Oulu University of Applied Sciences, where I completed my studies in Information Technology. 
-                My academic journey has equipped me with a strong foundation in both front-end and back-end development.
+              {translations.about.paragraph1}
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-                I enjoy building user-friendly applications that are not just functional, but also enjoyable to use.
-                I’m especially interested in full-stack development and love the process of turning ideas reality.  
+              {translations.about.paragraph2}
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-                Outside of coding, I’m a pretty easy-going person who gets along well with all kinds of people. 
-                I like to unwind by playing video games, watching football or motorsports, and spending time with animals. 
-                My girlfriend and I have two cats who definitely keep things interesting. 
-                I believe that staying curious and having fun outside of work helps keep me sharp and creative in what I do.
+              {translations.about.paragraph3}
             </p>
           </div>
         </motion.div>
