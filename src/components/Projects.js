@@ -36,6 +36,7 @@ const Projects = () => {
         description: translations.projects.items[3].description,
         technologies: translations.projects.items[3].technologies,
         github: 'https://github.com/AyrtonR/Project-Spotify-2024',
+        live: 'https://youtu.be/_xx3CCDpSXw?si=o3-p1n1v72MWYsuC',
       },
     {
       title: translations.projects.items[4].title,
