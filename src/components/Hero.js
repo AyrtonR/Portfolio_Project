@@ -49,8 +49,8 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
               <motion.a
-                href={process.env.PUBLIC_URL + '/cv_2025.pdf'}
-                download="Ayrton_Ramirez_CV.pdf"
+                href={process.env.PUBLIC_URL + (language === 'en' ? '/CV_2026_eng.pdf' : '/CV_2026_esp.pdf')}
+                download={language === 'en' ? 'Ayrton_Ramirez_CV_EN.pdf' : 'Ayrton_Ramirez_CV_ES.pdf'}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
